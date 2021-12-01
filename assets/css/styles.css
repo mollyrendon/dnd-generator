@@ -1,0 +1,131 @@
+:root {
+  --primary-color: rgb(0, 0, 0);
+  --secondary-color: rgb(0, 153, 51);
+  --tertiary-color: rgb(153, 255, 153);
+}
+
+/*Header Styles*/
+h1 {
+  text-align: center;
+  font-family: "Road Rage", cursive, sans-serif;
+  font-size: 100px;
+}
+
+body {
+  background-image: url("../images/wallpaperflare.com_wallpaper.jpg");
+  background-size: cover;
+  max-width: 100%;
+  background-repeat: no-repeat;
+}
+
+/*Character Choices Styles*/
+
+.char-section {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: rgba(224, 224, 235, 0.5);
+  justify-content: space-around;
+  margin: 10px;
+}
+
+.title {
+  color: var(--primary-color);
+  font-size: 30px;
+  font-weight: bold;
+}
+
+textarea {
+  border-radius: 5px;
+  padding-bottom: 20px;
+  margin: 20px;
+  resize: none;
+}
+
+.roll-btn {
+  background-color: var(--secondary-color);
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.roll-btn:hover {
+  background-color: var(--tertiary-color);
+}
+
+/*Name Input Styles*/
+
+.click-btn {
+  background-color: var(--secondary-color);
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.click-btn:hover {
+  background-color: var(--tertiary-color);
+}
+
+.character-modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+
+.character-label {
+  color: var(--primary-color);
+  font-size: 15px;
+}
+
+.modal-body {
+  background-color: white;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid;
+  width: 50%;
+}
+
+.modal-title {
+  color: var(--primary-color);
+  font-size: 30px;
+}
+
+.btn {
+  background-color: var(--secondary-color);
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: var(--tertiary-color);
+}
+
+.close {
+  font-size: 30px;
+}
+
+/* UTILITIES */
+
+/*Media Query for Smaller Desktop Screens and Smaller*/
+@media screen and (max-width: 980px) {
+  header h1 {
+    text-align: center;
+  }
+
+  .char-section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  body {
+    max-width: 100%;
+  }
+}
+
+/*Media Query for Tablets and Smaller*/
+
+/*Media Query for Mobile Phones and Smaller*/

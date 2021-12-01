@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Road+Rage&display=swap" rel="stylesheet">
+    <title>DND Character Generator</title>
+  </head>
+  <body>
+    <!--Header-->
+    <header>
+      <h1 class="main-title">D&D Character Generator</h1>
+    </header>
+
+    <!--Character Choices-->
+    <section id="choices" class="char-section">
+    
+    <!-- Char. Class-->
+        <div class="char-class">
+            <h2 class="title">Character Class</h2>
+            <div class="card-body">
+                <textarea
+                readonly
+                  id="class-input"
+                  placeholder="Your Random Class"
+                  aria-label="Generated Class"
+                ></textarea>
+              </div>
+            <button id="class-btn" class="roll-btn">Roll</button>
+        </div>
+
+    <!--Char. Race-->
+        <div class="char-race">
+            <h2 class="title">Character Race</h2>
+            <div class="card-body">
+                <textarea
+                readonly
+                  id="race-input"
+                  placeholder="Your Random Race"
+                  aria-label="Generated Race"
+                ></textarea>
+              </div>
+            <button id="race-btn" class="roll-btn">Roll</button>
+        </div>
+
+    <!--Char. Alignment-->
+        <div class="char-align">
+            <h2 class="title">Character Alignment</h2>
+            <div class="card-body">
+                <textarea
+                readonly
+                  id="align-input"
+                  placeholder="Your Random Alignment"
+                  aria-label="Generated Alignment"
+                ></textarea>
+              </div>
+            <button id="alignment-btn" class="roll-btn">Roll</button>
+        </div>
+
+    <!--Char. Name Input-->
+    <div>
+        <h2 class="title">Name Your New DND Character</h2>
+        <button id="click-here" class="click-btn">Click Here</button>
+      </div>
+        <div class="character-modal" id="name-modal">
+            <div class="modal-body">
+                <span class="close">&times;</span>
+                <h5 class="modal-title" id="character-name">Name Your New DND Character</h5>
+                    <label>Enter Character Name Here</label>
+                    <div>
+                        <textarea id="characternameinput"></textarea>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn" id="save-btn">Save Name</button>
+                    </div>
+            </div>
+        </div>
+        
+        <h2 class="title">Your New DND Character</h2>
+      <div id= "generated-character">
+      </div>
+    </section>
+
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
